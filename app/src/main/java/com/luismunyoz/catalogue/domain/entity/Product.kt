@@ -7,7 +7,9 @@ class Product (
     val numLikes: Int,
     val numComments: Int,
     val price: Int,
-    val photo: String
+    val photo: String,
+    val title: String,
+    val description: String
 ){
 
     fun isSoldOut() : Boolean = status.equals(STATUS_SOLD_OUT)

@@ -55,7 +55,7 @@ class CategoryProductsFragment: BaseFragment<CategoryProductsContract.View,
     }
 
     override fun populateProducts(products: List<UIProduct>) {
-        val adapter = CategoryProductsAdapter(products)
+        val adapter = CategoryProductsAdapter(products,activity!!)
         categoryproductsList.layoutManager = GridLayoutManager(context, 2,
                 RecyclerView.VERTICAL, false)
         categoryproductsList.adapter = adapter

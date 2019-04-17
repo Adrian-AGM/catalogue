@@ -15,5 +15,5 @@ class APIMapper @Inject constructor() {
     fun mapProducts(products: List<APIProduct>) : List<Product> = products.map { map(it) }
 
     fun map(product: APIProduct) : Product = Product(product.id, product.name, product.status,
-            product.numLikes, product.numComments, product.price, product.photo)
+            product.numLikes, product.numComments, product.price, product.photo, product.title, product.description)
 }

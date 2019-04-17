@@ -9,5 +9,7 @@ data class CacheProduct(
         var numLikes: Int = 0,
         var numComments: Int = 0,
         var price: Int = 0,
-        var photo: String? = null
+        var photo: String? = null,
+        var title: String? = null,
+        var description: String? = null
 )

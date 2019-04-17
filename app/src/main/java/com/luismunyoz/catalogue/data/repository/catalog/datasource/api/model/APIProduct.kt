@@ -9,5 +9,7 @@ class APIProduct (
     @SerializedName("num_likes") val numLikes: Int,
     @SerializedName("num_comments") val numComments: Int,
     val price: Int,
-    val photo: String
+    val photo: String,
+    val title: String,
+    val description: String
 )

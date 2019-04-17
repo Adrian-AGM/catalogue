@@ -10,11 +10,11 @@ import retrofit2.http.Url
 
 interface ApiService {
 
-    @Headers("secret-key: \$2a\$10\$PhkCjpeB5/6MBYbuN1UpHuJUrAPLRKMXQEaayHfKEMRJ7s/kfCw8W")
-    @GET("/b/5c18b71533a8fe76ff4e6911/4")
+    @Headers("secret-key: \$2a\$10\$/FnaPANNBKuyQd16QIfxDOd1PhWV07Jc8aYY6rf3Tg9okh00invMW")
+    @GET("/b/5cb5a5270367e61b21b9d6d5/latest")
     fun getCategories(): Single<List<APICategory>>
 
-    @Headers("secret-key: \$2a\$10\$PhkCjpeB5/6MBYbuN1UpHuJUrAPLRKMXQEaayHfKEMRJ7s/kfCw8W")
+    @Headers("secret-key: \$2a\$10\$/FnaPANNBKuyQd16QIfxDOd1PhWV07Jc8aYY6rf3Tg9okh00invMW")
     @GET
     fun getItems(@Url location: String): Single<List<APIProduct>>
 }
